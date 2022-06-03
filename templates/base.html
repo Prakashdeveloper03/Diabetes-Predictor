@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diabetes Predictor</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="{{
+        url_for('static', path='images/icon.svg') }}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{
+        url_for('static', path='css/style.css') }}"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <h3>Diabetes Predictor</h3>
+      <p>
+        A Machine Learning Web App, Built with FastAPI, Deployed using Heroku.
+      </p>
+      <div id="form-container">
+        <div id="form-wrapper">
+          <form action="/predict" method="post">
+            <div class="flex: 6">
+              <input
+                id="pregnancies"
+                name="pregnancies"
+                class="form-control"
+                type="number"
+                min="0"
+                max="17"
+                step="1"
+                placeholder="Number of Pregnancies eg. 2"
+                required
+              />
+              <input
+                id="glucose"
+                name="glucose"
+                class="form-control"
+                type="number"
+                min="44"
+                max="200"
+                step="1"
+                placeholder="Glucose (mg/dL) eg. 80"
+                required
+              />
+              <input
+                id="bloodpressure"
+                name="bloodpressure"
+                class="form-control"
+                type="number"
+                min="24"
+                max="150"
+                step="1"
+                placeholder="Blood Pressure (mmHg) eg. 80"
+                required
+              />
+              <input
+                id="skinthickness"
+                name="skinthickness"
+                class="form-control"
+                type="number"
+                min="7"
+                max="110"
+                step="1"
+                placeholder="Skin Thickness (mm) eg. 55"
+                required
+              />
+              <input
+                id="insulin"
+                name="insulin"
+                class="form-control"
+                type="number"
+                min="99"
+                max="744"
+                step="1"
+                placeholder="Insulin Level (IU/mL) eg. 175"
+                required
+              />
+              <input
+                id="bmi"
+                name="bmi"
+                class="form-control"
+                type="number"
+                min="7.2"
+                max="80.6"
+                step="0.1"
+                placeholder="Body Mass Index (kg/m²) eg. 23.5"
+                required
+              />
+              <input
+                id="dpf"
+                name="dpf"
+                class="form-control"
+                type="number"
+                min="0.078"
+                max="2.420"
+                step="0.001"
+                placeholder="Diabetes Pedigree Function eg. 0.588"
+                required
+              />
+              <input
+                id="age"
+                name="age"
+                class="form-control"
+                type="number"
+                min="22"
+                max="80"
+                placeholder="Age (years) eg. 32"
+                required
+              />
+              <input id="submit" class="btn" type="submit" value="Predict" />
+              <input
+                id="submit"
+                class="btn"
+                type="button"
+                onclick="location.href='/docs';"
+                style="float: right; background-color: rgb(90, 101, 104)"
+                value="OpenAPI"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+      <br />
+      <p style="align-items: center">Made with ❤️ By Siva Prakash</p>
+    </div>
+  </body>
+</html>

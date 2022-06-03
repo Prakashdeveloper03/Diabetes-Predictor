@@ -1,0 +1,20 @@
+body {
+  background: linear-gradient(to bottom right, #1259fe, #1259fe);
+  color: #fff;
+}
+
+h3,
+span,
+img {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+}
+
+.results {
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  margin-top: 100px;
+}
