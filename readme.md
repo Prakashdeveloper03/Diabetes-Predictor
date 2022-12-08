@@ -1,11 +1,10 @@
 # Diabetes Predictor
-![python 3.10.4](https://img.shields.io/badge/Python-3.10.4-blue.svg)
+![python 3.11.0](https://img.shields.io/badge/Python-3.11.0-blue.svg)
 ![html](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
 ![numpy](https://img.shields.io/badge/Numpy-777BB4?logo=numpy&logoColor=white)
 ![pandas](https://img.shields.io/badge/Pandas-2C2D72?logo=pandas&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit_learn-0078D4?logo=scikit-learn&logoColor=white)
-![fastapi](https://img.shields.io/badge/fastapi-109989?logo=FASTAPI&logoColor=white)
-![heroku](https://img.shields.io/badge/Heroku-430098?logo=heroku&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/Scikit_learn-0078D4?logo=scikit-learn&logoColor=white)
+![fastapi](https://img.shields.io/badge/Fastapi-109989?logo=FASTAPI&logoColor=white)
 ![jupyter](https://img.shields.io/badge/Jupyter-F37626.svg?logo=Jupyter&logoColor=white)
 ![terminal](https://img.shields.io/badge/Windows%20Terminal-4D4D4D?logo=windows%20terminal&logoColor=white)
 ![vscode](https://img.shields.io/badge/Visual_Studio_Code-0078D4?logo=visual%20studio%20code&logoColor=white)
@@ -35,7 +34,7 @@ The data contains the following columns:
 Open Anaconda prompt and create new environment
 
 ```
-conda create -n your_env_name python = (any_version_number)
+conda create -n your_env_name python = (any_version_number > 3.10.4)
 ```
 
 Then Activate the newly created environment

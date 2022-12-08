@@ -25,11 +25,11 @@ async def read_item(request: Request):
     """
     Function to render base.html at route '/' as a get request
 
-    Args:
-        request (Request): request in path operation that will return a template
+    __Args__:
+        - __request (Request)__: request in path operation that will return a template
 
-    Returns:
-        TemplateResponse: render base.html
+    __Returns__:
+        - __TemplateResponse__: render `base.html`
     """
     return templates.TemplateResponse("base.html", {"request": request})
 
@@ -51,18 +51,18 @@ async def predict(
     and shows the result by rendering result.html at route '/predict'
 
     Args:
-        request (Request): request in path operation that will return a template
-        pregnancies (int, optional): Pregnancies value
-        glucose (int, optional): Glucose level
-        bloodpressure (int, optional): Blood pressure level
-        skinthickness (int, optional): Skinthickness value
-        insulin (int, optional): Insulin level
-        bmi (float, optional): Body mass index value
-        dpf (float, optional): Diabetes pedigree function
-        age (int, optional): Age value as int
+    - __request (Request)__: request in path operation that will return a template
+    - __pregnancies (int)__: Pregnancies value
+    - __glucose (int)__: Glucose level
+    - __bloodpressure (int)__: Blood pressure level
+    - __skinthickness (int)__: Skinthickness value
+    - __insulin (int)__: Insulin level
+    - __bmi (float)__: Body mass index value
+    - __dpf (float)__: Diabetes pedigree function
+    - __age (int)__: Age value as int
 
     Returns:
-        TemplateResponse: render result.html
+    - __TemplateResponse__: render `result.html`
     """
     data = pd.DataFrame(
         [[pregnancies, glucose, bloodpressure, skinthickness, insulin, bmi, dpf, age]],
